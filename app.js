@@ -29,13 +29,13 @@ console.log(average());
 
 function search() {
     let i  = ages.length;
-    min = ages[i-1];
+    minimum = ages[i-1];
     while (i--) {
-        if (ages[i] < min) {
-            min  = ages[i];
+        if (ages[i] < minimum) {
+            minimum  = ages[i];
         }
     }
-    return min
+    return minimum
 }
 console.log(search());
 
@@ -58,10 +58,12 @@ console.log(house());
 
 function numbers() {
     let high = 0;
+    let array = [];
     for (let i = 0; i < ages[i]; i++) {
         high = ages[i] * ages[i];
-        console.log([high]); 
+        array.push(high); 
     }
+    return array
     
 }
 console.log(numbers());
@@ -83,3 +85,16 @@ function pass() {
     
 }
 console.log(pass());
+
+
+let max = 20;
+let mini = 1;
+function random(mini, max) {
+    let array=[];
+    for (let i = 0; i < 20; i++) {
+        array.push (Math.floor((Math.random() * (max - mini + 1)) + mini));
+    }
+    return array
+    
+}
+console.log(random(mini,max));
