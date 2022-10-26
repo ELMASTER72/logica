@@ -58,7 +58,6 @@ console.log(house());
 
 function numbers() {
     let high = 0;
-    let array=[];
     for (let i = 0; i < ages[i]; i++) {
         high = ages[i] * ages[i];
         console.log([high]); 
@@ -68,3 +67,19 @@ function numbers() {
 console.log(numbers());
 
 
+let passwordtrue=[
+    {password:"hola"},
+    {password:"amigo"},
+    {password:"perro"},
+    {password:"azul"},
+    {password:"rojo"},
+    
+];
+
+function pass() {
+    return passwordtrue.map(function(passwordtrue) {
+        return passwordtrue.password === "perro"
+     });
+    
+}
+console.log(pass());
